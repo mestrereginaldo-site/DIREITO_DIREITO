@@ -8,23 +8,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2092/2092658.png">
+    <!-- Biblioteca de animações -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <!-- Cabeçalho -->
     <header class="header">
         <div class="container">
             <nav class="navbar">
-                <a href="#" class="logo">
+                <a href="#" class="logo animate__animated animate__fadeInLeft">
                     <i class="fas fa-balance-scale"></i>
                     <span>Advocacia</span>Digital
                 </a>
                 <div class="nav-links">
-                    <a href="#inicio">Início</a>
-                    <a href="#servicos">Serviços</a>
-                    <a href="#sobre">Sobre</a>
-                    <a href="#como-funciona">Como Funciona</a>
-                    <a href="#contato">Contato</a>
-                    <a href="#agendar" class="btn-agendar">Agendar Consulta</a>
+                    <a href="#inicio" class="nav-link animate__animated">Início</a>
+                    <a href="#servicos" class="nav-link animate__animated">Serviços</a>
+                    <a href="#sobre" class="nav-link animate__animated">Sobre</a>
+                    <a href="#como-funciona" class="nav-link animate__animated">Como Funciona</a>
+                    <a href="#contato" class="nav-link animate__animated">Contato</a>
+                    <a href="#agendar" class="btn-agendar pulse-animation">Agendar Consulta</a>
                 </div>
                 <button class="menu-toggle">
                     <i class="fas fa-bars"></i>
@@ -37,28 +39,28 @@
     <section id="inicio" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Consultoria Jurídica <span class="highlight">Online</span> para sua Liberdade</h1>
-                <p class="subtitle">Advocacia moderna, ágil e eficiente. Atendimento 100% digital para resolver seus problemas jurídicos de qualquer lugar do mundo.</p>
+                <h1 class="animate__animated animate__fadeInUp">Consultoria Jurídica <span class="highlight typing-animation">Online</span> para sua Liberdade</h1>
+                <p class="subtitle animate__animated animate__fadeInUp animate__delay-1s">Advocacia moderna, ágil e eficiente. Atendimento 100% digital para resolver seus problemas jurídicos de qualquer lugar do mundo.</p>
                 <div class="cta-buttons">
-                    <a href="#agendar" class="btn-primary">Agendar Consulta Inicial</a>
-                    <a href="#servicos" class="btn-secondary">Conhecer Serviços</a>
+                    <a href="#agendar" class="btn-primary hover-pulse">Agendar Consulta Inicial</a>
+                    <a href="#servicos" class="btn-secondary hover-pulse">Conhecer Serviços</a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat">
-                        <h3>100+</h3>
+                        <h3><span class="counter" data-target="150">0</span>+</h3>
                         <p>Clientes Atendidos</p>
                     </div>
                     <div class="stat">
-                        <h3>24h</h3>
+                        <h3><span class="counter" data-target="24">0</span>h</h3>
                         <p>Resposta Rápida</p>
                     </div>
                     <div class="stat">
-                        <h3>100%</h3>
+                        <h3><span class="counter" data-target="100">0</span>%</h3>
                         <p>Online</p>
                     </div>
                 </div>
             </div>
-            <div class="hero-image">
+            <div class="hero-image floating-animation">
                 <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Advogado trabalhando remotamente">
             </div>
         </div>
@@ -67,61 +69,61 @@
     <!-- Seção Serviços -->
     <section id="servicos" class="services">
         <div class="container">
-            <h2 class="section-title">Serviços Jurídicos <span class="highlight">Digitais</span></h2>
-            <p class="section-subtitle">Soluções jurídicas completas, sem necessidade de deslocamento</p>
+            <h2 class="section-title animate-on-scroll">Serviços Jurídicos <span class="highlight">Digitais</span></h2>
+            <p class="section-subtitle animate-on-scroll">Soluções jurídicas completas, sem necessidade de deslocamento</p>
             
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card animate-on-scroll hover-3d">
                     <div class="service-icon">
                         <i class="fas fa-file-contract"></i>
                     </div>
                     <h3>Revisão de Contratos</h3>
                     <p>Análise detalhada de contratos com foco na proteção dos seus interesses. Receba um relatório com observações e sugestões de alteração.</p>
                     <div class="service-price">
-                        <span class="price">R$ 297</span>
+                        <span class="price">R$ <span class="price-number" data-price="297">297</span></span>
                         <span class="price-note">por contrato</span>
                     </div>
-                    <a href="#agendar" class="btn-service">Contratar</a>
+                    <a href="#agendar" class="btn-service hover-pulse">Contratar</a>
                 </div>
                 
-                <div class="service-card featured">
+                <div class="service-card featured animate-on-scroll hover-3d">
                     <div class="service-icon">
                         <i class="fas fa-headset"></i>
                     </div>
                     <h3>Consulta Jurídica Online</h3>
                     <p>Sessão de 60 minutos por videochamama para analisar seu caso, orientar sobre procedimentos e definir estratégias jurídicas.</p>
                     <div class="service-price">
-                        <span class="price">R$ 497</span>
+                        <span class="price">R$ <span class="price-number" data-price="497">497</span></span>
                         <span class="price-note">por consulta</span>
                     </div>
-                    <a href="#agendar" class="btn-service">Agendar Agora</a>
-                    <div class="featured-badge">Mais Popular</div>
+                    <a href="#agendar" class="btn-service hover-pulse">Agendar Agora</a>
+                    <div class="featured-badge pulse-animation">Mais Popular</div>
                 </div>
                 
-                <div class="service-card">
+                <div class="service-card animate-on-scroll hover-3d">
                     <div class="service-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3>Pacote Empresarial</h3>
                     <p>Assessoria mensal para empresas com suporte jurídico contínuo, revisão de documentos e orientação preventiva.</p>
                     <div class="service-price">
-                        <span class="price">R$ 1.497</span>
+                        <span class="price">R$ <span class="price-number" data-price="1497">1.497</span></span>
                         <span class="price-note">mensal</span>
                     </div>
-                    <a href="#agendar" class="btn-service">Contratar</a>
+                    <a href="#agendar" class="btn-service hover-pulse">Contratar</a>
                 </div>
                 
-                <div class="service-card">
+                <div class="service-card animate-on-scroll hover-3d">
                     <div class="service-icon">
                         <i class="fas fa-gavel"></i>
                     </div>
                     <h3>Defesa em Processos</h3>
                     <p>Atuação em processos judiciais e administrativos com acompanhamento completo e atualizações regulares.</p>
                     <div class="service-price">
-                        <span class="price">A partir de R$ 1.990</span>
+                        <span class="price">A partir de R$ <span class="price-number" data-price="1990">1.990</span></span>
                         <span class="price-note">consulte condições</span>
                     </div>
-                    <a href="#agendar" class="btn-service">Falar com Especialista</a>
+                    <a href="#agendar" class="btn-service hover-pulse">Falar com Especialista</a>
                 </div>
             </div>
         </div>
@@ -130,11 +132,11 @@
     <!-- Seção Como Funciona -->
     <section id="como-funciona" class="how-it-works">
         <div class="container">
-            <h2 class="section-title">Como Funciona a <span class="highlight">Advocacia Digital</span></h2>
-            <p class="section-subtitle">Processo simplificado em 4 passos para resolver suas questões jurídicas</p>
+            <h2 class="section-title animate-on-scroll">Como Funciona a <span class="highlight">Advocacia Digital</span></h2>
+            <p class="section-subtitle animate-on-scroll">Processo simplificado em 4 passos para resolver suas questões jurídicas</p>
             
             <div class="steps">
-                <div class="step">
+                <div class="step animate-on-scroll">
                     <div class="step-number">1</div>
                     <div class="step-content">
                         <h3>Agendamento Online</h3>
@@ -142,7 +144,7 @@
                     </div>
                 </div>
                 
-                <div class="step">
+                <div class="step animate-on-scroll">
                     <div class="step-number">2</div>
                     <div class="step-content">
                         <h3>Pré-Consulta</h3>
@@ -150,7 +152,7 @@
                     </div>
                 </div>
                 
-                <div class="step">
+                <div class="step animate-on-scroll">
                     <div class="step-number">3</div>
                     <div class="step-content">
                         <h3>Atendimento Virtual</h3>
@@ -158,7 +160,7 @@
                     </div>
                 </div>
                 
-                <div class="step">
+                <div class="step animate-on-scroll">
                     <div class="step-number">4</div>
                     <div class="step-content">
                         <h3>Acompanhamento</h3>
@@ -173,11 +175,11 @@
     <section id="sobre" class="about">
         <div class="container">
             <div class="about-content">
-                <h2 class="section-title">Advocacia para a <span class="highlight">Era Digital</span></h2>
-                <p>Sou um advogado que decidiu transformar a prática jurídica tradicional em um serviço moderno, ágil e acessível. Cansado da burocracia e lentidão dos processos convencionais, criei um modelo de advocacia 100% digital que me permite oferecer serviços de alta qualidade enquanto vivo com liberdade geográfica.</p>
+                <h2 class="section-title animate-on-scroll">Advocacia para a <span class="highlight">Era Digital</span></h2>
+                <p class="animate-on-scroll">Sou um advogado que decidiu transformar a prática jurídica tradicional em um serviço moderno, ágil e acessível. Cansado da burocracia e lentidão dos processos convencionais, criei um modelo de advocacia 100% digital que me permite oferecer serviços de alta qualidade enquanto vivo com liberdade geográfica.</p>
                 
                 <div class="about-features">
-                    <div class="feature">
+                    <div class="feature animate-on-scroll">
                         <i class="fas fa-globe-americas"></i>
                         <div>
                             <h4>Atendimento Global</h4>
@@ -185,7 +187,7 @@
                         </div>
                     </div>
                     
-                    <div class="feature">
+                    <div class="feature animate-on-scroll">
                         <i class="fas fa-clock"></i>
                         <div>
                             <h4>Agilidade</h4>
@@ -193,7 +195,7 @@
                         </div>
                     </div>
                     
-                    <div class="feature">
+                    <div class="feature animate-on-scroll">
                         <i class="fas fa-lock"></i>
                         <div>
                             <h4>Segurança</h4>
@@ -201,7 +203,7 @@
                         </div>
                     </div>
                     
-                    <div class="feature">
+                    <div class="feature animate-on-scroll">
                         <i class="fas fa-money-bill-wave"></i>
                         <div>
                             <h4>Transparência</h4>
@@ -210,10 +212,10 @@
                     </div>
                 </div>
                 
-                <a href="#contato" class="btn-primary">Fale Comigo</a>
+                <a href="#contato" class="btn-primary hover-pulse animate-on-scroll">Fale Comigo</a>
             </div>
             
-            <div class="about-image">
+            <div class="about-image floating-animation-slow">
                 <img src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Advogado trabalhando como nômade digital">
             </div>
         </div>
@@ -222,65 +224,65 @@
     <!-- Seção Agendamento -->
     <section id="agendar" class="booking">
         <div class="container">
-            <h2 class="section-title">Agende sua <span class="highlight">Consulta Inicial</span></h2>
-            <p class="section-subtitle">Escolha o serviço, selecione o horário e pague online. Simples e rápido.</p>
+            <h2 class="section-title animate-on-scroll">Agende sua <span class="highlight">Consulta Inicial</span></h2>
+            <p class="section-subtitle animate-on-scroll">Escolha o serviço, selecione o horário e pague online. Simples e rápido.</p>
             
             <div class="booking-form">
                 <div class="form-step active" id="step1">
                     <h3>1. Selecione o Serviço</h3>
                     <div class="service-options">
-                        <div class="service-option">
+                        <div class="service-option hover-pulse">
                             <input type="radio" id="service1" name="service" value="Revisão de Contrato" checked>
                             <label for="service1">
                                 <strong>Revisão de Contrato</strong>
-                                <span>R$ 297</span>
+                                <span class="price-animation">R$ 297</span>
                             </label>
                         </div>
                         
-                        <div class="service-option">
+                        <div class="service-option hover-pulse">
                             <input type="radio" id="service2" name="service" value="Consulta Jurídica">
                             <label for="service2">
                                 <strong>Consulta Jurídica (60 min)</strong>
-                                <span>R$ 497</span>
+                                <span class="price-animation">R$ 497</span>
                             </label>
                         </div>
                         
-                        <div class="service-option">
+                        <div class="service-option hover-pulse">
                             <input type="radio" id="service3" name="service" value="Pacote Empresarial">
                             <label for="service3">
                                 <strong>Pacote Empresarial</strong>
-                                <span>R$ 1.497/mês</span>
+                                <span class="price-animation">R$ 1.497/mês</span>
                             </label>
                         </div>
                         
-                        <div class="service-option">
+                        <div class="service-option hover-pulse">
                             <input type="radio" id="service4" name="service" value="Defesa em Processos">
                             <label for="service4">
                                 <strong>Defesa em Processos</strong>
-                                <span>Sob consulta</span>
+                                <span class="price-animation">Sob consulta</span>
                             </label>
                         </div>
                     </div>
-                    <button class="btn-next" onclick="nextStep()">Próximo</button>
+                    <button class="btn-next hover-pulse" onclick="nextStep()">Próximo</button>
                 </div>
                 
                 <div class="form-step" id="step2">
                     <h3>2. Seus Dados</h3>
                     <div class="form-group">
-                        <input type="text" id="name" placeholder="Seu nome completo" required>
+                        <input type="text" id="name" placeholder="Seu nome completo" required class="input-animation">
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" placeholder="Seu melhor e-mail" required>
+                        <input type="email" id="email" placeholder="Seu melhor e-mail" required class="input-animation">
                     </div>
                     <div class="form-group">
-                        <input type="tel" id="phone" placeholder="Seu WhatsApp" required>
+                        <input type="tel" id="phone" placeholder="Seu WhatsApp" required class="input-animation">
                     </div>
                     <div class="form-group">
-                        <textarea id="message" placeholder="Descreva brevemente sua necessidade" rows="3"></textarea>
+                        <textarea id="message" placeholder="Descreva brevemente sua necessidade" rows="3" class="input-animation"></textarea>
                     </div>
                     <div class="form-buttons">
-                        <button class="btn-prev" onclick="prevStep()">Voltar</button>
-                        <button class="btn-next" onclick="nextStep()">Próximo</button>
+                        <button class="btn-prev hover-pulse" onclick="prevStep()">Voltar</button>
+                        <button class="btn-next hover-pulse" onclick="nextStep()">Próximo</button>
                     </div>
                 </div>
                 
@@ -288,11 +290,11 @@
                     <h3>3. Agendamento</h3>
                     <div class="form-group">
                         <label for="date">Data preferencial:</label>
-                        <input type="date" id="date" required>
+                        <input type="date" id="date" required class="input-animation">
                     </div>
                     <div class="form-group">
                         <label for="time">Horário preferencial:</label>
-                        <select id="time" required>
+                        <select id="time" required class="input-animation">
                             <option value="">Selecione</option>
                             <option value="09:00">09:00</option>
                             <option value="10:00">10:00</option>
@@ -304,7 +306,7 @@
                     </div>
                     <div class="form-group">
                         <label for="timezone">Fuso horário:</label>
-                        <select id="timezone" required>
+                        <select id="timezone" required class="input-animation">
                             <option value="BRT">Brasília (BRT)</option>
                             <option value="GMT">GMT (Londres)</option>
                             <option value="EST">EST (Nova York)</option>
@@ -312,8 +314,8 @@
                         </select>
                     </div>
                     <div class="form-buttons">
-                        <button class="btn-prev" onclick="prevStep()">Voltar</button>
-                        <button class="btn-next" onclick="nextStep()">Próximo</button>
+                        <button class="btn-prev hover-pulse" onclick="prevStep()">Voltar</button>
+                        <button class="btn-next hover-pulse" onclick="nextStep()">Próximo</button>
                     </div>
                 </div>
                 
@@ -321,7 +323,7 @@
                     <h3>4. Confirmação</h3>
                     <div class="confirmation">
                         <p><strong>Serviço:</strong> <span id="confirm-service">Consulta Jurídica (60 min)</span></p>
-                        <p><strong>Valor:</strong> <span id="confirm-price">R$ 497</span></p>
+                        <p><strong>Valor:</strong> <span id="confirm-price" class="price-animation">R$ 497</span></p>
                         <p><strong>Nome:</strong> <span id="confirm-name">-</span></p>
                         <p><strong>E-mail:</strong> <span id="confirm-email">-</span></p>
                         <p><strong>Data:</strong> <span id="confirm-date">-</span></p>
@@ -329,14 +331,14 @@
                         
                         <div class="payment-options">
                             <h4>Forma de Pagamento:</h4>
-                            <div class="payment-option">
+                            <div class="payment-option hover-pulse">
                                 <input type="radio" id="pix" name="payment" value="PIX" checked>
                                 <label for="pix">
                                     <i class="fas fa-qrcode"></i>
                                     <span>PIX (5% de desconto)</span>
                                 </label>
                             </div>
-                            <div class="payment-option">
+                            <div class="payment-option hover-pulse">
                                 <input type="radio" id="card" name="payment" value="Cartão">
                                 <label for="card">
                                     <i class="fas fa-credit-card"></i>
@@ -352,18 +354,18 @@
                     </div>
                     
                     <div class="form-buttons">
-                        <button class="btn-prev" onclick="prevStep()">Voltar</button>
-                        <button class="btn-submit" onclick="submitBooking()">Confirmar Agendamento</button>
+                        <button class="btn-prev hover-pulse" onclick="prevStep()">Voltar</button>
+                        <button class="btn-submit hover-pulse" onclick="submitBooking()">Confirmar Agendamento</button>
                     </div>
                 </div>
                 
                 <div class="form-step" id="step5">
                     <div class="success-message">
-                        <i class="fas fa-check-circle"></i>
-                        <h3>Agendamento Confirmado!</h3>
+                        <i class="fas fa-check-circle success-icon"></i>
+                        <h3 class="animate-charcter">Agendamento Confirmado!</h3>
                         <p>Em instantes você receberá um e-mail com os detalhes da consulta e instruções para pagamento.</p>
                         <p>Para entrar na videochamada no dia marcado, acesse sua <a href="#">área do cliente</a>.</p>
-                        <button class="btn-primary" onclick="resetForm()">Fazer Novo Agendamento</button>
+                        <button class="btn-primary hover-pulse" onclick="resetForm()">Fazer Novo Agendamento</button>
                     </div>
                 </div>
             </div>
@@ -373,12 +375,12 @@
     <!-- Seção Contato -->
     <section id="contato" class="contact">
         <div class="container">
-            <h2 class="section-title">Entre em <span class="highlight">Contato</span></h2>
-            <p class="section-subtitle">Dúvidas? Entre em contato por qualquer um dos canais abaixo</p>
+            <h2 class="section-title animate-on-scroll">Entre em <span class="highlight">Contato</span></h2>
+            <p class="section-subtitle animate-on-scroll">Dúvidas? Entre em contato por qualquer um dos canais abaixo</p>
             
             <div class="contact-container">
                 <div class="contact-info">
-                    <div class="contact-item">
+                    <div class="contact-item animate-on-scroll">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>E-mail</h4>
@@ -386,7 +388,7 @@
                         </div>
                     </div>
                     
-                    <div class="contact-item">
+                    <div class="contact-item animate-on-scroll">
                         <i class="fas fa-phone"></i>
                         <div>
                             <h4>Telefone/WhatsApp</h4>
@@ -394,7 +396,7 @@
                         </div>
                     </div>
                     
-                    <div class="contact-item">
+                    <div class="contact-item animate-on-scroll">
                         <i class="fas fa-clock"></i>
                         <div>
                             <h4>Horário de Atendimento</h4>
@@ -402,7 +404,7 @@
                         </div>
                     </div>
                     
-                    <div class="contact-item">
+                    <div class="contact-item animate-on-scroll">
                         <i class="fas fa-shield-alt"></i>
                         <div>
                             <h4>Segurança e Confidencialidade</h4>
@@ -414,15 +416,15 @@
                 <div class="contact-form">
                     <h3>Envie uma Mensagem</h3>
                     <div class="form-group">
-                        <input type="text" placeholder="Seu nome" id="contact-name">
+                        <input type="text" placeholder="Seu nome" id="contact-name" class="input-animation">
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Seu e-mail" id="contact-email">
+                        <input type="email" placeholder="Seu e-mail" id="contact-email" class="input-animation">
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Sua mensagem" rows="5" id="contact-message"></textarea>
+                        <textarea placeholder="Sua mensagem" rows="5" id="contact-message" class="input-animation"></textarea>
                     </div>
-                    <button class="btn-primary" onclick="sendContactMessage()">Enviar Mensagem</button>
+                    <button class="btn-primary hover-pulse" onclick="sendContactMessage()">Enviar Mensagem</button>
                 </div>
             </div>
         </div>
@@ -439,9 +441,9 @@
                     </a>
                     <p>Consultoria jurídica 100% online para clientes em todo o Brasil e exterior.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 
@@ -484,7 +486,7 @@
     </footer>
 
     <!-- Botão do WhatsApp -->
-    <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20jurídica" class="whatsapp-button" target="_blank">
+    <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20jurídica" class="whatsapp-button bounce-animation" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
